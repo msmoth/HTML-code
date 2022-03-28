@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<!--Title:Contact Page
+    Use: Contact Page
+    Author: Madelyn Smothers
+    School/Term: Southern Illinois Univerisy, Spring 2022
+    Developed: Mar 26, 2022
+    Tested: Mar 26, 2022--> Firefox passed
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="mystyle.css">
+        <meta name="author" content="MJ Smothers">
+        <style>
+            
+           
+        </style>
+        <title>Contact</title>
+    </head>
+<body>
+    
+        <h1>Welcome to Smothers Bike Shop </h1> 
+            <h2> Smothers' Bikes is a economically sourcing bike shop commited to getting people on the ride of their life. </h2>
+            <aside> 2234 Sunset Drive Bodega, San Diego CA. (619)-445-000* 
+                <a href="https://siu.edu/"> Siu Website </a>  
+            </aside>
+            
+            <meta charset="utf-8">
+            <title>Smother's Bikes:</title>
+</body>
+<body>
+    <div class="navbar">
+        <ul class="menu">
+             <li><a href="index.htm"></i> Home</a></li>
+             <li><a href="services.htm"></i> Services</a></li>
+             <li><a class="active" href="contact.htm"></i> Contact</a></li>
+             <li><a href="Sales.htm"></i> Sales</a></li>
+             <li><a href="bikerentals.html"></i> Rentals</a></li>
+        </ul>
+    </div>
+    <br>
+    <p>Form Application</p>
+    <br>
+    <div class="form">
+        <form action="response.htm">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" minlength="15" maxlength="25" autofocus><br>
+        <label for="address">Address</label>
+        <input type="text" id="address" minlength="15" maxlength="50" required> <br>
+        <label for="city">City</label>
+        <input type="text" id="city" minlength="4" maxlength="25" required> <br>
+        <label for="state">State</label>
+        <select id="state">
+            <optgroup label="State Selection">
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+            </optgroup>
+        </select><br>
+        <label for="zip">Zip Code</label>
+        <input type="text" id="zip" minlength="5" maxlength="10" pattern="\d{5}([\-])\d{4}" required><br>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" minlength="10" maxlength="12" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required><br>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" minlength="10" maxlength="25" required><br>
+        <label for="date">Date</label>
+        <input type="date" id="date" pattern="[01]?\d\/[0-3]\d\/\d{4}" required><br><br>
+        </form>
+        <!---Tried to seperate the form into multiple columns for responseive size---->
+        <div style="overflow-x:auto">
+        <table style="width: 100%; border: none;">
+            <tbody><tr>
+            <td><label fo"inqtype">Inquiry type</label></td>
+            <td><input type="checkbox" name="inqtype" value="rental">Rental<br></td>
+            <td><input type="checkbox" name="inqtype" value="sales">Sales<br></td>
+            <td><input type="checkbox" name="inqtype" value="service">Services<br></td></tr>
+            
+            <td><label for="biketype">Bike Rental</label></td>
+            <td><input type="radio" name="biketype" value="rkgrowler">Rocky Mountain Growler</td>
+            <td><input type="radio" name="biketype" value="fuelex">Fuel EX 9.0 X01</td>
+            <td><input type="radio" name="biketype" value="goldencycles">Golden Cycles Shocker</td>
+            <td><input type="radio" name="bikeype" value="marinnasico">Marin Nasico Complete 2022</td>
+            </tbody>
+            </table>
+        </div>
+        <br><br>
+        <!--Second part of form-->
+        <form action="response.htm">
+        <label for="passowrd">Password</label>
+        <input type="password" id="password" pattern="[a-zA-z0-9]{6,}" required><br>
+        <label for="message">Messages/Inqueries</label><br>
+        <textarea id="message" 
+            placeholder="Messages/Inqueries">
+        </textarea>
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+
+
+        </form>
+    </div>
+
+    
+</body>
+</html>
